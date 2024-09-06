@@ -1,0 +1,65 @@
+HW2 Due 11:59PM CT February 9
+
+***Please review the top part of ../hw1/hw1.txt***
+***Your chance of success greatly increases if you start very early. Your chance of failure increases if you start late. Please use as many reviews as you possibly can.***
+
+In this homework we'll create an initial strategic design for a version of the Wordle game.
+
+Let's first describe the version of the game that we'll design. We'll not be writing any code in this homework, but only be creating an initial design.
+
+We will work with some restrictions for this game.
+
+The game will allow us to play against only one word "FAVOR" but we will design in a way that the game can easily be extended for other words that a user may be asked to guess.
+
+When the game starts the user is presented with a grid of six rows with 5 boxes in each row. The objective of the game is for the user to guess the word the application has chosen, which in our case is FAVOR. Words can only be 5 letters long.
+
+Initially a "Guess" button is disabled. Once a player enters 5 letters, the button is enabled. If the user removes a character, which they can to change, then the Guess button is disabled again. 
+
+When a player types a letter, it appears in upper case within a box in the currently active row. At the start, the first row is active. If a user presses any key other than a letter, the keystrokes are ignored.
+
+When a user clicks on the "Guess" button the currently active row becomes inactive and any further input by the user will not affect the details on that row. The next row becomes active unless the user has completed all six rows or has won the game.
+
+Once the "Guess" button is clicked, each box in the currently active row changes to a green, yellow, or gray color. It is green if the entered letter is in the exact location as it appears in the word to be guessed. It will be yellow if the letter appears in a different position. It will be gray if the letter is not present in the word to be guessed.
+
+For example, given the word FAVOR, if the user enters RAPID, then the five boxes will have the colors Yellow, Green, GRAY, GRAY, GRAY, respectively.
+
+If the user enters the next guess as MAYOR, the colors will be Gray, Green, Gray, Green, Green, respectively, in the second row.
+
+Once the player wins they can't enter any more guess and will have to quit the game.
+
+If the player guesses on the first try, display "Amazing". If the player guesses on the second try, display "Splendid". If they guess on a third try, display "Awesome". Win on any other tries, display "Yay". If the user fails to guess after six tries, display "It was FAVOR, better luck next time". Of course, if the word being guessed is something other than FAVOR, it will appears instead on that display line.
+
+Create an initial design of this program and answer the questions below. 
+Feel free to ask for frequent reviews.
+
+Include a separate file (may be a scan of hand drawn picture if you like, or a pdf, tiff, word document, etc.) which shows a UML diagram of your design. Refer to that diagram from the text description you write here.
+
+1. How would you design this program? 
+
+This design will be split into 2 main portions.
+
+We will have a GUI interface where there will be a 5x6 grid on the screen where the user will input their guesses on each row of the grid until they either run out of rows to type on, or they successfully guess the word "FAVOR." The guess button will also be present, and when pressed, will prompt the logic side to determine the "correctness" of the guess, displayed in the green, yellow and gray boxes.
+
+Our other portion of our program is the logical, behind the scenes, portion of our program. The logic will compare each letter of the guessed word to "FAVOR," it will label each letter green, for the correct letter in the correct position, yellow for correct letter in the wrong position, and gray for the wrong letter, and have the GUI display it for the users. It will also make sure the user inputs only 5 letters, and allow the guess button to appear only if the user has a valid guess.
+
+2. Discuss what language you would use.
+
+For this game, we have the option of choosing a GUI or a console program. The GUI program will have graphics that the user can interact with when playing the game. The console program will have the user type on a command line interface in order to interact with the game.
+
+We are implementing a GUI program, since we are designing a game, it is important that the graphics are simple and aesthetically attractive which will create a more enjoyable experience for the player. Additionally, we want to limit what type of data the user can enter. Giving them a limited amount of options to press will give the program more control over the game. Creating a GUI program is good for this. 
+
+Some of the most common languages that easily support GUI programs are Java and Python. We are choosing Python for this design because of its GUI Library and our familiarity with the language.
+
+3. How do you plan to structure the program, what libraries would you use?
+
+The programs will be structured into 2 sections: the GUI and the logic. The GUI will be a 5x6 grid as an array and the user can input a 5 letter word. The guess button will only be available when a 5 letter word is given, so a boolean variable can be used to make the button available.
+
+When the guess button is pressed, the GUI can communicate with the logic to verify the user’s 5 letter word. The logic can match each letter from the users and the guessed word, and if they are the same letter at the same position, then the GUI will display green. If they are the same letter but at a different position, then the GUI will display yellow. Then gray if it is invalid.
+
+For the GUI, we can use the tkinter library in Python to create a separate window. The library will allow us the ease of creating buttons, 5x6 grid, and modify the color of each grid on a specific row. The logic can communicate with the tkinter library when evaluating the logic. 
+
+For the logic, we can use the unittest module in Python. This module will test the logic when comparing letters between the user’s guess and the guessed word. We can use this module through each iteration of the logic: when both are the same letters and same position, same letters but different positions, and invalid letters. 
+
+For the build tool, we can use the setuptools library for building the python project. The library will allow for the ease of defining the metadata, dependencies, and entry points for the project. For unit testing, the library will configure, organize and run tests. 
+
+Total [10]: 10

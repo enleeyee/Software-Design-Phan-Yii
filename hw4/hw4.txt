@@ -1,0 +1,49 @@
+HW4 Due 11:59PM April 26
+
+***Please review the top part of ../hw1/hw1.txt***
+***There will be no reviews for this Homework***
+***Please remember to follow the things that were emphasized throughout this course on writing***
+***Please see the details in the requestReviews.txt file***
+
+Feel free to give answers collectively, and also if you want to, you can call out something specific to yourself different from your team member. Bring out your learnings and reflect on them here.
+
+Please remember to write in multiple short paragraphs. Bring out as much details and depth as you can, to reflect on your learnings and insights.
+
+1. What did you essentially learn in this course about design?
+                           	 
+Uyen Vi Phan
+Throughout the course of the semester I learned about what makes a software design good and why it is important, the elements and principles of good code design, and the techniques and skills that can improve design and how and when to use them.
+
+A good design must always be simple. This is the main principle that was drilled into our heads within this class. Simple code is purposeful, the intention of the code will be obvious if the code is simple, this allows our code to be easily understood by ourselves and our peers. It also makes our software easy to maintain and modify later on which in turn reduces time and resources required for maintenance. It will make it easy to identify and fix bugs in our code as well.
+
+We also learned about a lot of different principles of design that can improve our code. Such as how the SRP and YAGNI principle will help us make sure our code is simple and focused. OCP can make our code flexible and compatible with other dependencies. DRY will reduce the amount of error we can make and reduce repetition. LSP can address issues with inheritance. And other general rules that reduce rigidity, coupling or complexity.
+
+We lastly learned about the techniques used to apply these principles, the most important one being Test Driven Development which is what we have been using all semester. TDD guarantees our code will always be functional as we are working on it. It gives us confidence that our code will always work as intended and will keep a log of our work. We also learned about various design patterns as well. Such as the Decorator Pattern we used in our Fibonacci assignment to make sure that all the fibonacci functions check for a negative number to maintain the DRY principle.
+
+Enlai Yii
+Throughout the course, I delved deep into the intricacies of software design, discovering the fundamental principles and techniques that underpin effective design practices. Keeping code simple not only makes it easier to understand but also facilitates maintenance and modification in the long run. By adhering to this principle, I learned to prioritize clarity and conciseness in my code, ensuring that its intent is transparent to both myself and my peers.
+
+Moreover, I developed a comprehensive understanding of various design principles such as the Single Responsibility Principle (SRP), Open/Closed Principle (OCP), and You Aren't Gonna Need It (YAGNI). These principles serve as guiding lights, helping me make informed decisions about how to structure my code and make it more flexible, extensible, and resilient to change. By applying these principles in assignments like Wordle, I honed my ability to create modular, loosely coupled systems that are easier to maintain and adapt over time.
+
+One of the most valuable techniques I learned in this course is Test-Driven Development (TDD). By writing tests before implementing functionality, I gained confidence in the correctness of my code and created a safety net for future modifications. TDD encouraged me to think deeply about the design of my code upfront, leading to cleaner, more robust solutions. It also instilled a sense of discipline in my development process, ensuring that I write code that is testable, modular, and resilient to unforeseen changes.
+
+Additionally, exploring various design patterns, such as the Factory Pattern, Decorator Pattern, and Observer Pattern, provided me with a toolkit of reusable solutions to common design problems. By understanding these patterns and their underlying principles, I learned to recognize recurring patterns in my own code and apply proven solutions effectively. This not only improved the quality of my code but also accelerated my development process by leveraging existing best practices.
+
+Overall, this course has been a transformative journey that has equipped me with the knowledge, skills, and mindset needed to design elegant, maintainable, and scalable software systems. From the foundational principles of simplicity and clarity to advanced techniques like TDD and design patterns, I am now better prepared to tackle complex software challenges with confidence and creativity.
+
+
+2. What are some of the general guidelines you would follow when designing?
+
+Some general habits and guidelines we would follow moving forward is to use test driven development and possibly code coverage. This will make sure our code is working as intended and will allow us to code in confidence.
+
+We will also follow the design principles and keep our code simple. We will put off our decision making to the last possible moment to comply with YAGNI, and make sure not to repeat chunks of code to preserve the DRY principle. We can make sure all our functions, files and folders will be organized so they will all carry a single responsibility. And keep our code flexible to input and rigid with output to follow OCP
+
+Firstly, we should prioritize clarity and readability in our code. This involves using meaningful variable names, writing clear and concise comments, and formatting our code consistently. By making our code easy to understand, we not only aid ourselves and our teammates in comprehension but also facilitate future maintenance and debugging efforts.
+
+Another important aspect of design is modularity and encapsulation. We should strive to break our code into small, cohesive modules that each serve a single purpose. By encapsulating related functionality together, we minimize the risk of unintended interactions and make it easier to reason about our code's behavior. This also promotes code reuse and facilitates testing, as individual modules can be isolated and tested independently.
+
+Furthermore, we should aim to minimize dependencies and maximize cohesion in our design. This means avoiding unnecessary coupling between modules and classes, as tight coupling can lead to brittle code that is difficult to change. Instead, we should favor loose coupling and high cohesion, which promote flexibility and maintainability.
+
+Additionally, we should always consider the scalability and performance implications of our design decisions. While it's important to prioritize simplicity and clarity, we should also be mindful of potential performance bottlenecks and scalability issues. This may involve making trade-offs between different design principles and optimizing critical sections of code for performance.
+
+

@@ -1,0 +1,47 @@
+HW3 Due 11:59PM March 22
+
+***Please review the top part of ../hw1/hw1.txt***
+***Your chance of success greatly increases if you start very early. Your chance of failure increases if you start late. Please use as many reviews as you possibly can.***
+
+1. According to the article <http://martinfowler.com/bliki/BeckDesignRules.html>, what are the rules of simple design. Why are these important? Discuss the impact of these principles. Give examples of using these principles in the class so far.
+
+The four rules of simple design are that a design must pass all of its tests, reveal its intention, contain no duplication, and has the fewest elements to accomplish these goals.
+
+These rules help us keep code simple, focused, and easily evolvable. These design rules will also make it easy for coders to review the code and easily understand and modify it.
+
+The ability for the code to pass all the test cases is the highest priority, it makes sure that the code works the entire time you are working on it. It makes sure that the code we built today will function tomorrow. Furthermore, test cases act as a log to see how pieces of the code works and how it evolved over time. We used this in our Wordle assignment, the test cases ensure that all the new code we write does not make previously functioning portions of our code to fail.
+
+Testing also acts as documentation, providing a clear specification of the desired software behavior. As the development phase continues, each test case outlines a specific scenario or use case and defines the input parameters and expected outcome. By reaching the test cases, developers, testers, and other stakeholders can gain insights into how the software should behave under different conditions. Test cases document the requirements and functionalities of the system in a structured and formalized manner, making it easier for team members to understand the intended behavior and verify that the software meets the desired criteria.
+
+The rule that a code must reveal its intention helps the coder understand what the code does. This includes functions that are titled after their intended operations, and variables that are named after the data they hold. It helps with collaborating with other coders, where the revealing code helps people understand what the function does. It also helps with maintaining the code, expressive code will cut the time and cost of reviewing and trying to understand the code before updating it. 
+
+Throughout our Wordle assignment, we applied the rule of revealing intention with respect to data structure and data representation in our Wordle assignment. For example, when defining variables or functions related to data structures such as the game board or the player's guess, we ensured that the names clearly indicated their purpose and usage. Similarly, when designing functions or methods to manipulate or interact with these data structures, we used descriptive names that reflected their intended operations. This approach enhanced readability, facilitated collaboration, and streamlined the process of understanding and maintaining the codebase. We also incorporated data structures like enums and dictionaries to help label and describe groups of data.
+
+In our Wordle assignment, we applied the principles of Single Responsibility Principle (SRP) and Open-Closed Principle (OCP) to ensure that our code follows the rule of revealing intention beyond just function and variable names. Specifically, we embraced SRP by dividing our tests and creating distinct classes for different aspects of the Wordle game, such as the Wordle logic itself, the Agile Randomizer service, and the Agile Spell Check service. By doing so, each component of our codebase has a clearly defined responsibility, making it evident what its intended purpose is. Additionally, we adhered to the OCP by designing our code in a way that allows for easy extension without modification. This separation of concerns ensures that future updates or changes, such as altering the source of word checking or word selection, can be accommodated seamlessly without impacting existing functionality.
+
+Avoiding duplicates helps a code to look more concise and neat. It follows the Don't Repeat Yourself princilpe (DRY) which reduces the messiness of the code and allows the code to look more understandable. In this class we removed duplicates by putting them in separate functions and called those functions. This helps reveal the intention of that piece of code better and makes the code look less complex and more understandable. It also reduces risks of bugs in your code.
+
+In the wordle.py module, the function count_occurrences_until_index is utilized twice, once in the tally_for_position function and again in the tally function. Rather than duplicating the code for counting occurrences, it is encapsulated within the count_occurrences_until_index function. This helps to maintain code clarity and conciseness by ensuring that the logic for counting occurrences is not repeated throughout the codebase. Instead, the intention of counting occurrences is clearly revealed by the function name, making the code more understandable and less complex. By following this approach, the code becomes more maintainable and easier to comprehend, aligning with the principle of avoiding duplication to enhance code clarity and maintainability.
+
+The principle related to keeping the codebase focused and minimalistic, as encapsulated in Kent Beck's rule of having the fewest elements necessary to achieve the desired goals, aligns closely with the You Aren't Going To Need It principle (YAGNI) in object-oriented design, where we put off writing code to the last possible minute. By adhering to this principle during the early stages of our Wordle assignment, we prioritized simplicity and clarity, starting with minimal implementations such as functions returning 'true' to pass initial test cases. This approach fosters readability, maintainability, and facilitates the evolution of the codebase over time, in line with the tenets of YAGNI. 
+
+When applying the rules of simple design, it's crucial to prioritize them according to their impact on the overall quality of the codebase. The first priority is ensuring that the code passes all tests, as this guarantees its functionality and reliability. Following this, the code should reveal its intention clearly, making it understandable and maintainable for collaborators. Eliminating duplication and keeping the codebase minimalistic should be pursued next, as they contribute to code readability and scalability.
+
+However, conflicts may arise when applying these rules, such as when removing duplication compromises clarity or when minimalism sacrifices functionality. In such cases, it's crucial to weigh the trade-offs and prioritize the rule that best serves the long-term goals of the project, possibly seeking input from team members to make informed decisions. Striking a balance between these principles ensures a codebase that is both robust and comprehensible, fostering efficient collaboration and sustainable development.
+
+In short, the article discusses the four rules of simple design, which prioritize passing tests, revealing intention, avoiding duplication, and minimizing elements. These rules serve as guiding principles for keeping code simple, focused, and easily maintainable. By adhering to these principles, developers ensure that their code remains robust, understandable, and adaptable over time. Overall, embracing these principles leads to more efficient and effective software development practices.
+
+
+2. Give from examples outside of this class, but limit to your personal experiences. Mention your name and below that provide details of your experience related to the rules, but outside of this class.
+
+Uyen Vi Phan:
+In my personal experience, I've noticed a significant difference between coding with and without tests. While studying data structures, I often found myself manually testing old code whenever I added new pieces, which was time-consuming. Without thorough testing, identifying and fixing errors became a lengthy process, sometimes taking hours.
+
+When assisting classmates with their code, I've encountered difficulties when their code lacks clear intentions. Using vague variable names like 'x', 'y', or 'z' makes it challenging to understand the logic, hindering my ability to provide effective assistance. Even when variable names are used, they are sometimes ambiguous, such as 'count', leading to confusion.
+
+Enlai Yii:
+During exam proctoring for a programming course, I observed students not minimizing their code, resulting in unnecessarily complex logic with unused variables and multiple if statements. Understanding such convoluted code within the limited exam time frame became challenging. Providing feedback also became cumbersome, as students struggled to implement changes on large, unoptimized code chunks, posing a disadvantage to them in understanding their own code.
+
+In our current database course project, which involves developing a full-stack website and database, avoiding duplication proves advantageous as the codebase grows. For instance, implementing a reusable component like 'top_bar' in the frontend simplifies the code and enables other developers to easily create additional pages based on a template. This approach enhances readability and accelerates development by reducing redundant code.
+
+Total [10]: 10
