@@ -1,0 +1,48 @@
+Assign1: Due 11:59PM CT February 23
+
+***Please review the top part of ../hw1/hw1.txt***
+***Your chance of success greatly increases if you start very early. Your chance of failure increases if you start late. Please use as many reviews as you possibly can.***
+
+Using Test First Development (no code without test first) let's implement the problem designed in hw2. Feel free to evolve that design and use judgment to make changes based on the improved understanding and learning. You are not required to use any of the design idea or languages you mentioned in hw2, apply decisions based on your renewed learnings.
+
+Please take small steps and ask for frequent reviews.
+
+First start with a tests list (tests.txt) and a canary test. Implement at most two more tests and minimum code to make those tests to pass. This is a great first step to complete and ask for a review.
+
+After completing the assignment (and only after) let's answer the following questions:
+
+1. What did you learn mainly in this assignment?
+
+Through assignment 1, we gained a hands-on understanding of the TDD workflow. Starting with the canary test in the tests.txt, creating tests was a huge learning curve as most instructors implement tests at the end compared to the beginning of a project. This approach ensures that code is driven by the requirements defined in the tests, promoting a structured and deliberate development process.
+
+Next, the assignment highlighted the importance of creating effective unit tests. Beginning with a canary test and expanding with more specific tests, such as, the logic for “FAVOR” & “FAVOR”, and “FAVOR” & “AMAST”. We learned how to craft tests that target individual units of code, verifying their behavior and functionality while keeping in mind simple, readable tests.
+
+The concept of implementing the minimum code necessary to make a test pass was a key focus. This approach discourages unnecessary complexity and encourages developing solutions incrementally. Each addition to the code is driven by the requirements defined in the test. 
+
+The assignment emphasized the significance of writing readable and simple code. By prioritizing clarity and conciseness, the resulting code becomes more maintainable and understandable. This principle aligns with the broader idea that code should be easy to comprehend for both the original developer and others who may work and read it in the future.
+
+2. How is the current design different, if at all, from the strategic design created in hw2?
+
+From hw2, the guess button was initially conceived as a boolean variable within a function. The current design features the guess button as part of the GUI implemented using the Tkinter library. The button is initially in the ‘disabled’ state and is enabled or disabled based on the length of the current entry in the ‘guessBox’ located within the main section of the code. 
+
+In the initial design outlined in hw2, the plan involved using the ‘setuptools’ library as the build tool for the Python project. This library was chosen for its ability to simplify the definition of project metadata, dependencies, and entry points. For the current design, Visual Studio 2022 provides support for Python development including build tools through the IDE. In the evolved design based on TDD and time crunch, the design needed a feature already integrated for the fast, evolving design.
+
+3. Were there any surprises or things you did not expect along the way? Any particular problem faced, things you had to tackle that you did not expect beforehand?
+
+We were initially surprised by the simplicity required to pass the test cases. The emphasis was on writing the “minimum code to pass the test cases,” restricting us from thinking too far ahead and focusing on evolving code for the potential future. This approach led to a significant learning curve as we adapted to taking incremental steps. 
+
+One of the challenges was understanding how to code the logic for partial matches, which is crucial for the Wordle game. Working within the constraints of TDD, we had to focus on addressing each test case individually without the luxury of planning extensively for future features or issues. Through using the hotline and discussing the logic, we had multiple iterations and frequent feedback to ensure that the partial logic works for every test case. 
+
+The implementation of the GUI was expectedly challenging, especially with our lack of prior experience with Tkinter. Navigating through the intricacies of GUI design and incorporating features such as ignoring non-alphabetical keys pressed by the user and how the current attempt must reflect the current entry. These minor details required careful consideration and precise implementation. 
+
+
+Total[100]: 100
+Program pops up the GUI when run[10]:
+Able to play the game[10]:
+All tests pass[10]:
+Test quality[20]:
+Code coverage[10]:
+Quality of design of core logic for tally[10]:
+Quality of design of the play rules[10]:
+Code quality[10]:
+Response to questions[10]:
