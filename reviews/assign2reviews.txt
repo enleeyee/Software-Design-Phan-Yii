@@ -1,0 +1,108 @@
+[Reviewed 03/07/24 18:04 PM CET]
+synopsis: SRP and OCP
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 03/07/24 06:32 AM CET]
+synopsis: need to clean up a bit and move forward
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 03/05/24 21:22 PM CET]
+synopsis: SRP and OCP
+
+details:
+
+Please see suggestions in files. Fix or ask for clarification over email, no point being stuck on the same thing for hours or days.
+
+------------------------------------------------------------------------------
+[Reviewed 03/05/24 21:22 PM CET]
+synopsis: SRP and OCP
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 03/05/24 08:14 AM CET]
+synopsis: SRP and OCP
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 03/04/24 06:10 AM CET]
+synopsis: SRP and OCP
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 03/03/24 21:15 PM CET]
+synopsis: test written does not follow test mentioned
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 03/03/24 07:41 AM CET]
+synopsis: let's move forward
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 02/29/24 16:32 PM EST]
+synopsis~: notice that tests are slower now
+
+details:
+
+Did you notice that tests are slower now. They will even fail if there is a network error. We should rethink.
+
+Please see suggestions in files.
+
+Let's do a quick review after these changes.
+
+------------------------------------------------------------------------------
+[Reviewed 02/28/24 06:53 AM CST]
+synopsis: let's discuss
+
+details:
+
+Let's discuss. What were some of the key takeaways from the videos on Testing with Dependencies? How did we approach the design of code which had dependencies? Let's outline the journey or the steps we took, at a very high level.
+
+------------------------------------------------------------------------------
+[Reviewed 02/25/24 22:20 PM MST]
+synopsis: let's change direction
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 02/25/24 08:48 AM MST]
+synopsis: let's clean up and move forward
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 02/24/24 07:25 AM PST]
+synopsis: missing tests.txt
+
+details:
+
+Missing tests.txt. Please see suggestions in files.
+
+------------------------------------------------------------------------------

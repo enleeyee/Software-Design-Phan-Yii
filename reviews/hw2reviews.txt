@@ -1,0 +1,80 @@
+[Reviewed 02/07/24 10:54 AM CET]
+synopsis: you're done
+
+details:
+
+yay
+
+------------------------------------------------------------------------------
+[Reviewed 02/06/24 08:14 AM CET]
+synopsis: almost there
+
+details:
+
+Diagram:
+
+Good details.
+
+Text:
+
+1.
+
+Good details.
+
+2.
+
+Good details.
+
+3.
+
+Good so far.
+
+What build tool will we use to automated the compilation (if needed) and running of the tests?
+
+------------------------------------------------------------------------------
+[Reviewed 02/05/24 09:05 AM CET]
+synopsis~: missing diagram file
+
+details:
+
+Missing the diagram file. Please take some time to closely go over the previous review, line by line. Make sure to have addressed each one of them.
+
+Let's do a quick review after these changes.
+
+------------------------------------------------------------------------------
+[Reviewed 02/04/24 13:43 PM CET]
+synopsis: let's bring in the details of the design
+
+details:
+
+Diagram:
+
+Please name the file as wordle.jpg or .png or .pdf, etc.
+
+Please create either a class diagram or a diagram showing various abstractions (which may be functions or classes) and how they are related. Most importantly, the diagram should show the separation of parts that will perform UI and the parts that will perform logic.
+
+We need to main things here. The part that will deal with the logic of the game and the part that will deal with the GUI. Then any parts that are needed to support each one of them.
+
+1.
+
+Please write in short paragraphs. Let's start with an introductory paragraph that states what we are focusing on. Then a few short paragraphs that takes us form high level details of the design to a limited lower level details. Take us down only to levels necessary for this stage in the design. Along the way not only stay what we have, but why - provide reasons for design decisions. Think of this as presenting the details to a team member, explaining what we are doing, why we decide on things, and how the program will be implemented.
+
+Do not include any code in or details of functions, methods, variables, etc.
+
+2.
+
+Let's write a short paragraph discussing what options we have - is this a console program, a GUI program, etc. Then in the next paragraph we can discuss why we are choosing one option over the other options. Then in a third paragraph we can discuss the languages that are suitable for this choice and then discuss why we pick a particular language.
+
+3.
+
+Let's discuss the following:
+
+1. How would we modularize the different parts of the program?
+
+2. What libraries will we be using?
+
+3. What unit testing library will we use?
+
+4. What build tool will we use to automated the compilation (if needed) and running of the tests?
+
+------------------------------------------------------------------------------

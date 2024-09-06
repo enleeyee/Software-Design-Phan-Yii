@@ -1,0 +1,263 @@
+[Reviewed 02/22/24 23:28 PM +08]
+synopsis: please move forward
+
+details:
+
+Please move forward.
+
+------------------------------------------------------------------------------
+[Reviewed 02/22/24 04:04 AM +08]
+synopsis: no GUI code found
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 02/21/24 21:38 PM +08]
+synopsis: let's clean up and move forward
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 02/21/24 10:17 AM +08]
+synopsis: separation of concerns
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 02/20/24 09:16 AM PST]
+synopsis: let's clean up and move forward
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 02/19/24 22:51 PM PST]
+synopsis: let us not return a large string
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 02/19/24 21:42 PM PST]
+synopsis~:  feedback notes from previous review still in files
+
+details: 
+
+Feedback from previous review are still in the files. Please address, remove those feedback notes from the files. After that, please update the reviews request file for a quick review.
+
+Also, please do not leave comments in code. Got question? Drop an email instead.
+
+------------------------------------------------------------------------------
+[Reviewed 02/19/24 17:03 PM MST]
+synopsis: let's bring clarity
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 02/19/24 05:47 AM MST]
+synopsis~: let's make code expressive, reveal intentions
+
+details:
+
+Please see suggestions in files.
+
+Let's do a quick review after these changes.
+
+------------------------------------------------------------------------------
+[Reviewed 02/18/24 17:35 PM MST]
+synopsis: the play function is not doing what's intended
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 02/18/24 15:04 PM MST]
+synopsis~: let's reduce code, avoid mutability, and use functional style
+
+details:
+
+Here is a pseudocode for the problem, using functional style and without any explicit mutation. This code is not in any particular language.
+
+tally(target, guess) {
+  return guess.split('')
+    .reduce((response, letter, i) => response append tallyForPosition(i, target, guess), []);
+}
+
+function tallyForPosition(position, target, guess) {
+  if(target[position] === guess[position]) {
+    return EXACT;
+  }
+  
+  letterAtPosition = guess[position];
+
+  positionalMatches = countPositionalMatches(target, guess, letterAtPosition);
+  nonPositionalOccurrencesInTarget = countNumberOfOccurrenceeUntilPosition(WORD_SIZE - 1, target, letterAtPosition) - positionalMatches;
+    
+  numberOfOccurancesInGuessUntilPosition = countNumberOfOccurrenceeUntilPosition(position, guess, letterAtPosition);
+    
+  if(nonPositionalOccurrencesInTarget >= numberOfOccurancesInGuessUntilPosition) {
+    return EXISTS;
+  }
+    
+  return NO_MATCH;
+}
+
+function countPositionalMatches(target, guess, letter) {
+  return target.split('')
+    .filter((ch, i) => target[i] === guess[i])
+    .filter(ch => ch === letter)
+    .length;
+}
+
+function countNumberOfOccurrenceeUntilPosition(position, word, letter) {
+  matches = word.substring(0, position + 1).match(new RegExp(letter, 'g'));
+  
+  return matches ? matches.length : 0;
+}
+
+After changing the tally function, let us ove forward to the next set of tests for the next function.
+
+Let's do a quick review after these changes.
+
+------------------------------------------------------------------------------
+[Reviewed 02/18/24 13:12 PM MST]
+synopsis~: lets' clean up
+
+details:
+
+Please see suggestions in files.
+
+Let's do a quick review after these changes.
+
+------------------------------------------------------------------------------
+[Reviewed 02/18/24 11:18 AM MST]
+synopsis~: let's move forward
+
+details:
+
+Please see suggestions in files.
+
+Let's do a quick review after these changes.
+
+------------------------------------------------------------------------------
+[Reviewed 02/17/24 05:18 AM MST]
+synopsis~: build failing, please do not update reviews request when build fails
+
+details:
+
+Please don't update the requestReview.txt when the build is not passing. Instead drop an email asking for help if you need suggestions on how to fix. Once the build passes, please update the review request file for a quick review.
+
+------------------------------------------------------------------------------
+[Reviewed 02/16/24 18:30 PM MST]
+synopsis: let's move forward
+
+details:
+
+Let's move forward to the next step.
+
+------------------------------------------------------------------------------
+[Reviewed 02/16/24 18:11 PM MST]
+synopsis~: let's complete the mentioned tests
+
+details:
+
+Lets' complete the mentioned tests before the next review.
+
+Let's do a quick review after these changes.
+
+------------------------------------------------------------------------------
+[Reviewed 02/16/24 16:52 PM MST]
+synopsis~:  feedback notes from previous review still in files
+
+details: 
+
+Feedback from previous review are still in the files. Please address, remove those feedback notes from the files. After that, please update the reviews request file for a quick review.
+
+------------------------------------------------------------------------------
+[Reviewed 02/16/24 15:53 PM MST]
+synopsis: let's clean up and move forward
+
+details:
+
+Please see suggestions in files. Let's move forward to the next tests.
+
+------------------------------------------------------------------------------
+[Reviewed 02/16/24 05:58 AM MST]
+synopsis~: let's rethink about the return value
+
+details:
+
+Please see suggestions in files.
+
+Let's do a quick review after these changes.
+
+------------------------------------------------------------------------------
+[Reviewed 02/15/24 22:48 PM MST]
+synopsis: one step at a time
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 02/15/24 09:06 AM MST]
+synopsis~: let's change direction
+
+details:
+
+**Please delete TacticalDesign.txt. - mentioned in the previous review.
+
+Please delete WordleGameLogic.py.
+Please delete testGameLogic.py
+
+Let's change direction. Please see tests.txt.
+
+Please use the files I have provided under src and test.
+
+A CI build has been setup for your project.
+You can see files related to this under assign1.
+
+How does this work?
+When you check in code, the CI build machine wakes up, fetches the latest 
+version of your code, and runs the file build.sh that is under your repository (above assign1). That file in turn runs the build scripts in your assign1 directory.
+
+In case you missed it, please read:
+<https://groups.google.com/g/uhcss24sd/c/UV83qPVxAF8/m/oAkIhjLdAAAJ>
+
+Also, please keep an eye on code coverage. To view the code coverage, please 
+run the build using the following command (do not click or double click, 
+instead open the command prompt, cd to your assign1 directory, and then run 
+from there).
+
+paver
+Then take a look at the file (using a browser):
+htmlcov/index.html
+
+Let's do a quick review after these changes.
+
+------------------------------------------------------------------------------
+[Reviewed 02/13/24 02:40 AM MST]
+synopsis~: did not find any tests
+
+details:
+
+Did not find any tests.
+
+Please update testsl.txt with one or two test phrases. Then implement one or two tests and minimum code for those to pass.
+
+Please delete TacticalDesign.txt.
+
+Let's do a quick review after these changes.
+
+------------------------------------------------------------------------------

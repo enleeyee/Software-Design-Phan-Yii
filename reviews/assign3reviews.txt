@@ -1,0 +1,132 @@
+[Reviewed 04/04/24 06:06 AM EDT]
+synopsis: let's check the test
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 04/03/24 22:36 PM EDT]
+synopsis: almost there
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 04/02/24 06:39 AM EDT]
+synopsis~: build failing, please do not update reviews request when build fails
+
+details:
+
+Please don't update the requestReview.txt when the build is not passing. Instead drop an email asking for help if you need suggestions on how to fix. Once the build passes, please update the review request file for a quick review.
+
+------------------------------------------------------------------------------
+[Reviewed 03/31/24 19:12 PM EDT]
+synopsis: let's see how this goes
+
+details:
+
+Let's see how this goes.
+
+------------------------------------------------------------------------------
+[Reviewed 03/31/24 04:52 AM MDT]
+synopsis: let's keep it DRY
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 03/30/24 18:14 PM MDT]
+synopsis: let's move forward
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 03/30/24 05:12 AM MDT]
+synopsis: let's move forward
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 03/29/24 15:21 PM MDT]
+synopsis: a few things to clean up
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 03/29/24 08:47 AM CET]
+synopsis~:  feedback notes from previous review still in files
+
+details: 
+
+Feedback from previous review are still in the files. Please address, remove those feedback notes from the files. After that, please update the reviews request file for a quick review.
+
+------------------------------------------------------------------------------
+[Reviewed 03/26/24 00:40 AM MDT]
+synopsis: DRY and SRP
+
+details:
+
+Please see suggestions in files. Too many duplicated contents.
+
+------------------------------------------------------------------------------
+[Reviewed 03/25/24 17:25 PM MDT]
+synopsis: let's more forward
+
+details:
+
+Let's more forward
+
+------------------------------------------------------------------------------
+[Reviewed 03/25/24 13:38 PM MDT]
+synopsis: let's check the test
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 03/24/24 19:38 PM MDT]
+synopsis: missing details in tests.txt
+
+details:
+
+Missing details in tests.txt:
+
+- canary
+
+- imperative solution
+- test imperative for position 0, 1, 2, 5, 8, 10
+- test imperative for position -1
+
+------------------------------------------------------------------------------
+[Reviewed 03/24/24 06:56 AM MDT]
+synopsis: missing tests.txt
+
+details:
+
+Missing tests.txt with:
+
+- canary
+
+- imperative solution
+- test imperative for position 0, 1, 2, 5, 8, 10
+- test imperative for position -1
+
+------------------------------------------------------------------------------
+[Reviewed 03/23/24 08:13 AM GMT]
+synopsis: did not find any code to review
+
+details:
+
+Did not find any code to review.
+
+------------------------------------------------------------------------------

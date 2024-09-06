@@ -1,0 +1,152 @@
+[Reviewed 04/18/24 06:12 AM MDT]
+synopsis: let's move forward
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 04/17/24 18:23 PM EDT]
+synopsis: please see previous review below
+
+details:
+
+Please see previous review below.
+
+------------------------------------------------------------------------------
+[Reviewed 04/17/24 14:48 PM EDT]
+synopsis: let's restructure a bit
+
+details:
+
+Keeping the criteria related files in a separate subdirectory under src and the processor code in a separate subdirectory under src will help quickly see the separation of concerns.
+
+------------------------------------------------------------------------------
+[Reviewed 04/16/24 22:30 PM EDT]
+synopsis: tests marked complete but not found
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 04/16/24 02:02 AM PDT]
+synopsis: let's move forward to the next step
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 04/14/24 21:30 PM PDT]
+synopsis: let's move forward
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 04/13/24 21:59 PM PDT]
+synopsis: let's refactor and move forward
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 04/12/24 22:13 PM PDT]
+synopsis: let's refactor
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 04/12/24 03:51 AM MDT]
+synopsis: let's check the tests
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 04/11/24 06:27 AM MDT]
+synopsis: let's move forward
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 04/10/24 19:33 PM MDT]
+synopsis: let's make tests readable, minimum code to make tests pass
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 04/10/24 07:13 AM EDT]
+synopsis: let's rethink about the design
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 04/09/24 07:07 AM EDT]
+synopsis: OCP
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 04/08/24 18:17 PM MDT]
+synopsis: let's move forward
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 04/08/24 05:11 AM MDT]
+synopsis: a few thing to improve
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 04/07/24 06:59 AM MDT]
+synopsis: let's reduce code
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 04/06/24 18:14 PM CDT]
+synopsis: None is a smell, minimum code to make test to pass
+
+details:
+
+Let's think through the design, minimum code, avoid smelly practices.
+
+------------------------------------------------------------------------------
+[Reviewed 04/06/24 17:58 PM CDT]
+synopsis: let's change our focus
+
+details:
+
+Please see suggestions in files.
+
+------------------------------------------------------------------------------
+[Reviewed 04/06/24 06:24 AM CDT]
+synopsis: let's take the first step
+
+details:
+
+Let's take the first step, beyond the canary.
+
+------------------------------------------------------------------------------
