@@ -1,0 +1,91 @@
+Assign3: Due 11:59PM CT April 5
+
+***Please review the top part of ../hw1/hw1.txt***
+***Your chance of success greatly increases if you start very early. Your chance of failure increases if you start late. Please use as many reviews as you possibly can.***
+
+Please bring forward the practices, techniques, and tools you have learned so far. This includes:
+Good code quality
+Lightweight design
+Minimum code
+Automated testing                                               		 
+Code coverage
+Build files (I created them for you in assign1, but it's your turn now to practice and learn further)
+Change build.sh in your repository to point to assign3 instead of assign3
+
+The Fibonacci series of numbers start with 1, 1, 2, 3, 5, 8, 13, 21, ...
+where values at position 0 and 1 are 1, and values at each position after
+that are a sum of values at the previous two positions.
+
+Write four implementations of a function to compute the Fibonacci number at a given position.
+
+Please start with one implementation at a time rather than rushing through all
+of them at the same time.
+
+The four implementations are described below:
+
+1. An imperative iteration.
+  Given a position n, loop through totaling values until you reach the value for the given position.
+
+2. A functional iteration.
+  	Given a position n, loop through totaling values until you reach the value for the given position. Avoid explicit mutability.
+
+3. A simple recursion.
+  Given a position, compute the value at a position using the expression fib(n-1) + fib(n-2).
+
+4. A memoized recursion.
+  Given a position, look up to see if the value has been precomputed and if so return that value. Otherwise, use recursion to compute the value.
+ 
+Confirms that the memoized version is faster than the recursive version.
+
+Reuse as much code as possible.
+
+Once you complete coding, please answer the following:
+
+1. What design principles did you use in this assignment? Discuss.
+
+First, we used the Don't Repeat Yourself (DRY) Principle through encapsulating the Fibonacci calculation logic into separate functions and utilizing memoization. We avoided repeating the logic of calculating Fibonacci numbers in different parts of the application. For instance, in the memorized_fibonacci implementation, we called the recursive solution so we reuse the same recursive call of the expression fib(n-1) + fib(n-2). This not only reduced redundancy, but also minimized the risk of inconsistencies in the logic. Furthermore, we avoided using the same test cases for each fibonacci function by creating a base fibonacci class and repeating the code for handling negative numbers in each fibonacci function using a decorator.
+
+Next, each component of the solution was designed to have a single responsibility aligning with the Single Responsibility Principle (SRP). The imperative solution solely focused on calculating Fibonacci numbers using a loop until we reached the value for the given position. Meanwhile the functional implementation used functool reduce and lambda to avoid explicit mutability. Similarly, validation and performance measurement were handled by separate components, ensuring that each part of the codebase had one reason to change. 
+
+Each Fibonacci implementation was designed to be open for extension, but closed for modification, following the Open Closed Principle (OCP). For example, when adding a new lambda parameter to the recursive approach, we wouldn’t require changes to the existing functions or the testing framework. This was achieved by abstracting the recursive calculation method behind a common interface or a callable parameter, allowing new strategies to be introduced with minimal impact on the existing code.
+
+We focus on implementing features that were immediately necessary for the task at hand, avoiding the temptation to add additional functionality that wasn’t required. YAGNI was evident in keeping the Fibonacci calculation implementations straightforward. For the memoization solution, we utilized a dynamic programming strategy to avoid redundancy computation. By focusing on the memoization and recursive strategies without preemptively optimizing or introducing more complex algorithms that weren't needed for the scope of this assignment.
+
+The solutions adhere to the KISS principle by keeping the implementation as simple as possible. Both recursive and memoized solutions of the Fibonacci sequence are straightforward through basic ternary operators for the recursive call and base cases, and initializing cache with the base cases. The performance testing code also kept uncomplicated, focusing on directly measuring and comparing the execution times of different approaches.
+
+In conclusion, these design principles and the thoughtful application of memoization, lambda functions, and ternary operators not only optimized our Fibonacci sequence solutions but also provided a blueprint for tackling similar computational problems with elegance and precision. This endeavor highlights the symbiosis between theoretical principles and practical application—a synergy that is essential for crafting efficient, reliable, and scalable software solutions.
+
+2. Any surprises or things that you did not expect?
+
+Derived classes in unit testing frameworks like unittest facilitated code reuse and organization, especially when testing functionality that has similar requirements across different implementations. This approach aligns with the Don't Repeat Yourself principle, ensuring that common testing logic is written once and reused across multiple test cases. Derived classes were surprising to see object-oriented principles applied so effectively in test code, but it's a powerful strategy for maintaining clean and efficient tests.
+
+Decorators are a powerful feature in Python, allowing you to modify or enhance the behavior of functions or methods without changing their actual code. Using decorators for validation, led to cleaner and more modular code. The decorators encapsulate functionality and can be reused across multiple FIbonacci implementations, aligning with principles like Single Responsibility Principle (SRP) and Open/Closed Principle (OCP). The ability to add significant functionality with minimal intrusion might be unexpected at first but showcases the flexibility and power of Python.
+
+The ternary operator can streamline code, especially for simple conditional assignments. The operator reduced the need for multi-line if-else statements, making the code more concise and potentially easier to read. Its effective use came as a surprise in terms of how much it can clean up code visually while still maintaining clarity. We will definitely use the operators again in the next assignment when it’s needed.
+
+Lambda functions offer a concise way to define anonymous functions in a single line, which is particularly useful for functional programming patterns like reduce. When applied to memorization, lambda functions can significantly optimize recursive algorithms like the Fibonacci sequence by avoiding repeated calculations. The combination of lambda functions and memorization was unexpectedly powerful for those not familiar with these techniques, like us, demonstrating how high-level concepts can be applied to solve classic computational problems efficiently.
+
+These techniques and patterns contribute to more efficient, readable, and maintainable code. The surprise comes from seeing how theoretical concepts apply in practical scenarios, leading to real-world benefits in code performance and quality. It’s a great example of how diverse programming concepts can come together to solve problems in elegant ways.
+
+3. What design patterns did you use in this assignment? Discuss.
+
+The Strategy pattern involves defining a family of algorithms, encapsulating each one, and making them interchangeable.  In our case, the different Fibonacci calculation methods (recursive, memoized, etc.) can be seen as strategies for calculating Fibonacci numbers. By abstracting the function that performs the calculation, we allow the Fibonacci algorithm to be swapped out without changing the code that uses it.
+
+The decorator pattern is used to add new functionality to an object without changing its structure. This can be seen in the way we validate non-negative positions. The base Fibonacci source function serves as the decorated object, and the validate_position function acts as a decorator. Thus, enhancing the original function with additional capability to reuse the function without modifying the core logic. 
+
+If we consider the caching mechanism in memoization, it closely resembles a Singleton pattern, especially if we ensure that the cache is only instantiated once and is accessible globally. The Singleton pattern ensures a class has only one instance and provides a global point of access to it. In our memoization function, the cache acts as a single instance that stores computed values, ensuring that each Fibonacci number is calculated only once.
+
+Total [100]: 99
+All tests pass[10]:
+Test quality[10]:
+Coverage [10]:
+Imperative solution[5]:
+Functional solution[10]:
+Recursive solution[5]:
+Memoized solution is DRY[10]:
+Performance tests[10]:
+Code quality[10]:
+Design quality[10]:
+
+Response to questions[10]: -1
+Factory method in the tests

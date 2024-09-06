@@ -1,0 +1,71 @@
+Assign4: Due 11:59PM CT April 19
+
+***Please review the top part of ../hw1/hw1.txt***
+***Your chance of success greatly increases if you start very early. Your chance of failure increases if you start late. Please use as many reviews as you possibly can.***
+
+Please bring forward the practices, techniques, and tools you have learned so far. This includes: 
+Good code quality
+Lightweight design
+Minimum code
+Automated testing                                                         
+Code coverage
+Build files (I created them for you in assign1, but it's your turn now to practice and learn further)
+Change build.sh in your repository to point to assign4 instead of assign3
+
+Please take small steps. Start with a canary test and one or two more tests.
+List your tests in a file named tests.txt. Check them off with a x as you 
+implement them. Remember to ask for a review each day. The earlier you start,
+the earlier you finish, and less the risk. If you start late, you carry a 
+bigger risk. I sincerely hope you will start early and come out winning in 
+this course.
+
+Using test first development, write the program described below.
+
+An agency specializes in evaluating job applicants. Different clients using their service will want applicants to be evaluated based on different criteria. New criteria not known today may be added in the future. Some existing criteria may also be removed at any time. Not all available criteria will be used by every client.
+
+Examples of criteria are employment status, criminal records, credit records, Security clearance, etc. For example, the employment status criterion will return a response of its evaluation with a status and reason, like so: pass, "applicant has had previous employment." As another example, the criminal records criterion may respond fail, "person has done time for bank robbery."
+
+For the purpose of this assignment, we will fake some response in each of the criteria when an evaluation is requested for applicants.
+
+Write a console application that will allow the user of the program to first choose the criteria they want to use, from a dynamic list of available criteria. Then evaluate the application for all the selected criteria. Finally the program will print the total result, pass or fail (pass only if all criteria passed) and provide a summary of the evaluations for that applicant. 
+
+Once you complete coding, please answer the following:
+
+1. What design principles did you use in this assignment? Discuss.
+
+We applied the Open Closed Principle (OCP) in this assignment by making sure that our Evaluate function by taking in a variable amount of criteria as the parameter. It allows for a variable amount of criteria to be considered as well as allows for new criteria to be added to the program without having to modify the evaluate function and keeps the function flexible.
+
+We used the Single Responsibility Principle (SRP) by seperating different functions and tests into their own files, and further seperated criteria functions and processing functions into their own folders. All the functions serve a single responsibility in the program.
+
+We followed the You Aren't Going to Need It (YAGNI) principle as well. Only writing the smallest amount of code to pass our test cases. many of our functions contain only one line. For example, we originally added things like name, email, phone number to our application class in our program but later removed them as they were not necessary for the purpose of our program.
+
+
+2. Any surprises or things that you did not expect?
+
+Python has a lot of useful built in functions that allow you to significantly simplify and reduce code. The reduce function made it really easy to combine and concatenate the results of the criteria functions, rather than using a for loop.
+
+The functions are very simple for this project, the description of the project is a lot more complicated than it appears to be. Possibly because of YAGNI and other design principles, it made the project a lot more approachable.
+
+
+3. What design patterns did you use in this assignment? Discuss.
+
+The Factory Method Pattern allows subclasses to decide what class to instantiate. In this case, process_applicant decides what criteria to evaluate from the crteria name.
+
+The Compose Method Pattern describes how a method should be composed of instructions at a single level of abstraction. In this project we used the built in python method reduce and merge_responses to acheive this. Instead of creating loops, we used merge responses to combine 2 results of a criteria, then used reduce to combine every criteria needed to process an applicant/
+
+Total [100]: 81
+Program works as expected [20]:
+All tests pass [10]:
+Test quality [10]:
+Code coverage [10]:
+Design quality [10]: -5
+def get_application_details(): violates OCP, if we change Application to add or remove properties, this one has to change.
+
+Design for extensibility without code change (DRY + OCP) [10]:
+Program handles new criteria well[10]: -10
+Code quality [10]:
+
+Response to questions [10]: -4
+A major aspect of the design was the user of a decorator like pattern.
+
+Need to spellcheck.

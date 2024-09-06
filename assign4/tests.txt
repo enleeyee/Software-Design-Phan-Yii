@@ -1,0 +1,47 @@
+x canary
+
+x process_applicant takes an application and no criteria and returns a status of pass and a message "Nothing to check"
+
+x process_application takes an application and employment criteria and returns a status of pass and a message "Applicant has had previous employment"
+x process_application takes an application and employment criteria and returns a status of fail and a message "Applicant has no previous employment"
+
+x process_application takes an application, employment criteria, and criminal records criteria, and returns a status of pass and a message "Application has had previous employment. Application has had no criminal records."
+x process_application takes an application, employment criteria, and criminal records criteria, and returns a status of fail and a message "Application has no previous employment. Application has had no criminal records."
+x process_application takes an application, employment criteria, and criminal records criteria, and returns a status of fail and a message "Application has had previous employment. Application has criminal records."
+
+x employment criteria passes an applicant
+x employment criteria fails an applicant
+ 
+x criminal records criteria passes an applicant
+x criminal records criteria fails an applicant
+
+x credit records criteria passes an applicant
+x credit records criteria fails an applicant
+
+x security clearance criteria passes an applicant
+x security clearance criteria fails an applicant
+
+x fetch criterion gets the criteria given its name as employment criteria
+x fetch criterion gets the criteria given its name as criminal records criteria
+
+
+Let's create a console UI that will allow the user to first pick from a list of available criteria.
+Then the program will iterate until the user wants to exit.
+Through each iteration, ask for details of an application.
+Evaluate the application and print the results.
+
+The program should have this flow:
+
+1. List all the available criteria to the user
+2. Ask user to select from the list of criteria
+
+3. Start a loop
+4. Ask the user to create an application - this should not use any of the criteria. This should entirely focus on populating an Application instance with *all* of its properties.
+5. Process the application with the criteria
+6. Display the results
+
+7. Ask the user if they want to process another application. If yes, repeat the body of the loop. If not, exit the loop and the program ends.
+
+
+Let the build task run the test.
+Let the build run task run the program interactively.
