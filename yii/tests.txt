@@ -1,0 +1,10 @@
+x canary test
+
+x -1 is not a perfect number
+x 10 is not a perfect number
+
+x 6 is a perfect number
+x 28 is a perfect number
+
+x [6, 28] are the perfect numbers for 30
+x [] is the perfect number for 1
